@@ -15,7 +15,7 @@ public static class RegisterServices
 {
     public static IServiceCollection RegisterApiService (this IServiceCollection services)
     {
-        const string BaseAddress = "https://localhost:7285";
+        const string BaseAddress = "https://localhost:7285/api/";
 
         services.AddHttpClient<IAuthService, AuthService>(config =>
         {
